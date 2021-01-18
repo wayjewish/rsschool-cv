@@ -1,2 +1,1 @@
-# rsschool-cv
-https://wayjewish.github.io/rsschool-cv/cv
+https://wayjewish.github.io/rsschool-cv/
