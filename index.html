@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Me cv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="head block-style1">
+            <figure class="head__figure">
+                <img class="head__img" src="img/i.jpg" title="Dmitry Uvarov" alt="Dmitry Uvarov">
+                <figcaption class="head__name">Dmitry Uvarov</figcaption>
+            </figure>
+        </header>
+
+        <section class="about block-style1">
+            <h1>CV</h1>
+            <p>Hi. My name is Dmitry Uvarov. I am 25 years old and live in Moscow.</p>
+            <p>I am currently working full-stack at ecostandard group.</p>
+            <p>I want to improve my professional skills. Learn new technologies.</p>
+            <p>I know HTML, CSS, SCCS, Bootstrap, Bitrix, JS, JQuery, React, PHP</p>
+            <p>Bachelor Of Samara State Technical University</p>
+            <p>level of English: Elementary</p>
+        </section>
+
+        <section class="code block-style1">
+            <h2>Code examples</h2>
+            <div class="code__func block-style2">
+                <span class="code__purple">function</span> <span class="code__orange">squareDigits</span>(<span class="code__orange">num</span>) {<br>
+                &nbsp;&nbsp;let <span class="code__orange">res</span> = String(<span class="code__orange">num</span>)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;.<span class="code__blue">split</span>('')<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;.<span class="code__blue">map</span>(<span class="code__orange">item</span> => String(<span class="code__blue">Math.pow</span>(<span class="code__orange">item</span>, <span class="code__orange">2</span>)))<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;.<span class="code__blue">join</span>('');<br>
+                    <br>
+                &nbsp;&nbsp;<span class="code__purple">return</span> Number(<span class="code__orange">res</span>);<br>
+                }
+            </div>
+            <div class="code__func block-style2">
+                <span class="code__purple">function</span> <span class="code__orange">capital</span>(<span class="code__orange">capitals</span>) {<br>
+                &nbsp;&nbsp;<span class="code__purple">return</span> <span class="code__orange">capitals</span>.<span class="code__blue">map</span>(<span class="code__orange">item</span> => `The capital of ${<span class="code__orange">item</span>.<span class="code__orange">state</span> ? <span class="code__orange">item</span>.<span class="code__orange">state</span> : <span class="code__orange">item</span>.<span class="code__orange">country</span>} is ${<span class="code__orange">item</span>.<span class="code__orange">capital</span>}`);<br>
+                }
+            </div>
+            <div class="code__func block-style2">
+                <span class="code__purple">function</span> <span class="code__orange">findShort</span>(<span class="code__orange">s</span>) {<br>
+                &nbsp;&nbsp;let <span class="code__orange">arrWords</span> = <span class="code__orange">s</span>.<span class="code__blue">split</span>(' ');<br>
+                &nbsp;&nbsp;let <span class="code__orange">arrLength</span> = <span class="code__orange">arrWords</span>.<span class="code__blue">map</span>(<span class="code__orange">item</span> => <span class="code__orange">item</span>.length);<br>
+                <br>
+                &nbsp;&nbsp;<span class="code__purple">return</span> <span class="code__blue">Math.min</span>(...<span class="code__orange">arrLength</span>);<br>
+                }
+            </div>
+        </section>
+
+        <footer class="contacts block-style1">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Email: <a href="mailto:diman_niks@mail.ru">diman_niks@mail.ru</a></li>
+                <li>Phone: <a href="tel:+79858577883">+79858577883</a></li>
+            </ul>
+        </footer>
+
+</body>
+</html>
