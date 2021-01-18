@@ -3,16 +3,16 @@
 3. I want to improve my professional skills. Learn new technologies
 4. HTML, CSS, SCCS, Bootstrap, Bitrix, JS, JQuery, React, PHP
 5. ```javascript
-	function squareDigits(num){
-	let res = String(num)
-	  .split('')
-	  .map(item => String(Math.pow(item, 2)))
-	  .join('');
+	function squareDigits(num) {
+	  let res = String(num)
+	    .split('')
+	    .map(item => String(Math.pow(item, 2)))
+	    .join('');
 
 	  return Number(res);
 	}
 
-	function capital(capitals){
+	function capital(capitals) {
 	  return capitals.map(item => `The capital of ${item.state ? item.state : item.country} is ${item.capital}`);
 	}
 
